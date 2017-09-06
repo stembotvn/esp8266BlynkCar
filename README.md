@@ -7,7 +7,7 @@ Chương trình này chạy trên Arduino IDE
 # Setup Blynk App để test Esp8266 Robot
 
 ## Bước 1: 
-Download app Blynk: https://play.google.com/store/apps/details?id=cc.blynk
+Download app Blynk: https://play.google.com/store/apps/details?id=cc.blynk 
 ## Bước 2: 
 Quét mã QR Code để cấu hình nhanh Demo App test điều khiển robot: 
 
