@@ -12,12 +12,9 @@ Download app Blynk: https://play.google.com/store/apps/details?id=cc.blynk
 Quét mã QR Code để cấu hình nhanh Demo App test điều khiển robot: 
 
 ![alt text](/media/ScanQR.png)
-
 ## Bước 3: 
 Đưa Camera Scan vào mã QR sau đây: 
-
 ![alt text](/media/DemoQRcode.jpg)
-
 ## Bước 4: 
 
 Trải nghiệm App demo điều khiển Robot (chú ý đảm bảo kết nối Wifi cho SmartPhone và Robot) 
