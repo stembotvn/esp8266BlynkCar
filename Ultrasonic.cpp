@@ -10,9 +10,9 @@
   #include "WProgram.h"
 #endif
 
-#include "EasySonar.h"
+#include "Ultrasonic.h"
 
-EasySonar::EasySonar(int TP, int EP)
+Ultrasonic::Ultrasonic(int TP, int EP)
 {
    pinMode(TP,OUTPUT);
    pinMode(EP,INPUT);
@@ -21,7 +21,7 @@ EasySonar::EasySonar(int TP, int EP)
    Time_out=3000;  // 3000 µs = 50cm // 30000 µs = 5 m 
 }
 
-EasySonar::EasySonar(int TP, int EP, long TO)
+Ultrasonic::Ultrasonic(int TP, int EP, long TO)
 {
    pinMode(TP,OUTPUT);
    pinMode(EP,INPUT);
@@ -30,7 +30,7 @@ EasySonar::EasySonar(int TP, int EP, long TO)
    Time_out=TO;
 }
 
-long EasySonar::Timing()
+long Ultrasonic::Timing()
 {
   digitalWrite(Trig_pin, LOW);
   delayMicroseconds(2);
@@ -43,7 +43,7 @@ long EasySonar::Timing()
   return duration;
 }
 
-float EasySonar::Ranging(int sys)
+float Ultrasonic::Ranging(int sys)
 {
   Timing();
   if (sys) {

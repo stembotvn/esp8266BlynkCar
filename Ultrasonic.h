@@ -4,8 +4,8 @@
 // This code is licensed under Creative Commons Share alike 
 // and Attribution by J.Rodrigo ( http://www.jrodrigo.net ).
 
-#ifndef EasySonar_h
-#define EasySonar_h
+#ifndef Ultrasonic_h
+#define Ultrasonic_h
 
 #if ARDUINO >= 100
   #include "Arduino.h"
@@ -16,11 +16,11 @@
 #define CM 1
 #define INC 0
 
-class EasySonar
+class Ultrasonic
 {
   public:
-    EasySonar(int TP, int EP);
-  	EasySonar(int TP, int EP, long TO);
+    Ultrasonic(int TP, int EP);
+  	Ultrasonic(int TP, int EP, long TO);
     long Timing();
     float Ranging(int sys);
 
