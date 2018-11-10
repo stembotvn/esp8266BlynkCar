@@ -18,14 +18,18 @@
  * App project setup:
  *   Two Axis Joystick on V1 in MERGE output mode.
  *   MERGE mode means device will receive both x and y within 1 message
- *
- **************************************************************/
+ *   
+ **************************************************************
+ * Author: Negendo 
+ * Product: Blynk Esp8266 robot car basic
+ * Date:    Nov,1st, 2018
+ * Fast IoT building with Robot 
+ */
 
 #define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 #include "Ultrasonic.h"
-//#include <AFMotor.h>
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
 
@@ -34,9 +38,9 @@
 #define DirLeft  D3
 #define DirRight D4
 
-const char* ssid = "Thingschanging";
-const char* password = "nguyennam123";
-WiFiClient client;
+const char* ssid = "your Wifi SSID";     // change your wifi SSID here
+const char* password = "wifi password";  // change your wifi Password here
+WiFiClient client;   
 Ultrasonic ultrasonic(D7,D8); // (Trig PIN,Echo PIN)
 //char auth[] = "40d55436882b4fbf87ae0106145822bb";  //Hien Blynk App token
 //char auth[] = "dbc9568d68d54604aeae1f3abcce8878";
