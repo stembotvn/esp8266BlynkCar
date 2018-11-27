@@ -81,8 +81,8 @@ void Turn_Left(int Car_speed)
 {
 analogWrite(PWMLeft, Car_speed);
 analogWrite(PWMRight, Car_speed);
-digitalWrite(DirLeft,LOW);
-digitalWrite(DirRight,HIGH);    
+digitalWrite(DirLeft,HIGH);
+digitalWrite(DirRight,LOW);    
 }
 
 /////////////////
@@ -90,8 +90,8 @@ void Turn_Right(int Car_speed)
 {
 analogWrite(PWMLeft, Car_speed);
 analogWrite(PWMRight, Car_speed);
-digitalWrite(DirLeft,HIGH);
-digitalWrite(DirRight,LOW);  
+digitalWrite(DirLeft,LOW);
+digitalWrite(DirRight,HIGH);  
 }
 ////////////////
 
